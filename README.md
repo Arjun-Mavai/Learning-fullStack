@@ -7,3 +7,4 @@ padding : internal space around the items and Margin : external space around the
 console.dir(document) : To see the document object : DOM
 nodemon : dev dependecy(material of the cton project) : automatically restarts the server(npm start automation) : manages changes in the source code. at code level : app.listen(3000 , () => console.log('server is running on port 3K')) ; starting the server.
 ./ means please look in the folder you're currenlty in . and ../ look in folder one above
+horizontal--L/R/Main axis/Drawer model of storage in flex container :: Vertical--Top/Bottom/Cross axis/almirah type of arrangement in flex direction property
