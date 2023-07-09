@@ -13,3 +13,6 @@ props/fn arguments/immutable/i/p to component :: state/local variable/mutable/da
 ES7+ extension : where create components dynamically : rafce : react alert function component export
 multicursor : through command+D pressing : wrap abbreviation using command+shift+P : command palate in view
 react trick in file components use : rafce : in html file use : ! then enter
+with emmet : use .myClass will create div with with this class , like #id then enter : for random text generation use **lorem**  or lorem*100 to generate more content then enter
+1 inch =2.54 cm , 96px , 1 em : 16px;
+transition transform ,translate
