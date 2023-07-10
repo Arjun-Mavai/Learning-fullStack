@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.new {
+    display : flex;
+    background-color : yellow;
+    justify-content : center;
+    align-items : center;
+    text-align : center;
+    flex-direction  : row ;
+    margin : 300px;
+    width : 100%;
+    border-radius : 24px;
+    flex-direction : flexstart;
+    
+}
+
+div.logo {
+    margin : 12px;
+}
+div.logo1 {
+    margin : 12px;
+}
+div.logo2 {
+    margin : 12px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+
+.logo1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+
+  .logo2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
+     
+    
+  }
+  
