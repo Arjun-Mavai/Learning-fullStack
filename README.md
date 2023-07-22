@@ -16,3 +16,4 @@ react trick in file components use : rafce : in html file use : ! then enter
 with emmet : use .myClass will create div with with this class , like #id then enter : for random text generation use **lorem**  or lorem*100 to generate more content then enter
 1 inch =2.54 cm , 96px , 1 em : 16px;
 transition transform ,translate
+<img width="963" alt="image" src="https://github.com/Arjun-Mavai/Learning-fullStack/assets/16522584/2376f4a1-f245-4025-bca5-839a0ecc028f">
