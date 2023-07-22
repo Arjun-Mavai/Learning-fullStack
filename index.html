@@ -12,6 +12,25 @@
     <div class="logo">First Box model</div>
     <div class="logo1">Second Box model</div>
     <div class="logo2">Third Box model</div>
+
+     <div onmouseover = "mOver(this)" onmouseout ="mOut(this)" style = "width : 200px; background-color : green ; height : 200px; font-size : 24px; display : flex; content-align : center; justify-content: center; cursor : pointer; "> Check dynamic Javascript changes
+
+
+</div>
+
+<script>
+ 
+ function mOver(obj){
+     obj.innerHTML = "Hello changed";
+     obj.style.backgroundColor = "blue";
+ 
+ }
+
+function mOut(obj){
+     obj.innerHTML = "Check dynamic Javascript changes";
+     obj.style.backgroundColor = "green";
+ 
+ }
     
    </div>
   </body>
