@@ -1,0 +1,14 @@
+async function fetchDataWithAsyncAwait(username) {
+  try {
+    const response = await fetch(`https://api.twiter.com/tweets/${username}`);
+
+    if (!response.ok) {
+      console.log("error fetching the tweets");
+    }
+    const data = await response.json();
+
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
