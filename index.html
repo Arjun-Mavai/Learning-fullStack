@@ -81,6 +81,13 @@
           text-align: center;
         }
       }
+
+      #paragraph-wrapper {
+        word-wrap: break-word; /* Allows long words to be broken and wrap to the next line */
+        white-space: pre-wrap; /* Preserves newlines and allows wrapping to the next line */
+        color: greenyellow;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
     </style>
   </head>
   <body>
@@ -135,49 +142,117 @@
       <h2>Spirituality</h2>
 
       <ul>
-        <li><i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500;"></i> 
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
           <a
             href="https://www.hindifiles.com/2020/03/shreemad-bhagwat-geeta-hindi.html"
             target="_blank"
             >Learn about Gita</a
           >
         </li>
-        <li><i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500;"></i>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
           <a
             href="https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A5%87%E0%A4%A6"
             target="_blank"
             >Learn about Vedas</a
           >
         </li>
-        <li><i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500;"></i>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
           <a
             href="https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D#:~:text=11.2%20%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%A6-,%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%20%E0%A4%B6%E0%A4%AC%E0%A5%8D%E0%A4%A6%20%E0%A4%95%E0%A4%BE%20%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A5,%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%A8%E0%A4%BE%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20%E0%A4%85%E0%A4%B5%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%A8%2D%E0%A4%B6%E0%A4%BF%E0%A4%A5%E0%A4%BF%E0%A4%B2%20%E0%A4%B9%E0%A5%8B%E0%A4%A8%E0%A4%BE%E0%A5%A4"
             target="_blank"
             >Learn about Upanishads</a
           >
         </li>
-        <li><i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500;"></i>
-          <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Learn about Artificial intelligence</a>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
+          <a
+            href="https://en.wikipedia.org/wiki/Artificial_intelligence"
+            target="_blank"
+            >Learn about Artificial intelligence</a
+          >
         </li>
-          <li><i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500;"></i>
-            <a href="https://thetravelintern.com/fun-facts-about-the-world/" target="_blank">Random facts of the world</a></li>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
+          <a
+            href="https://thetravelintern.com/fun-facts-about-the-world/"
+            target="_blank"
+            >Random facts of the world</a
+          >
+        </li>
       </ul>
+
+      <table id="table1">
+        <tr>
+          <th>i__</th>
+          <th>Content__________</th>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-book" style="color: #ffa500"></i></td>
+          <td>
+            <a
+              href="https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A5%87%E0%A4%A6"
+              target="_blank"
+              >Learn about Vedas</a
+            >
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-book" style="color: #ffa500"></i></td>
+          <td>
+            <a
+              href="https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D#:~:text=11.2%20%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%A6-,%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%20%E0%A4%B6%E0%A4%AC%E0%A5%8D%E0%A4%A6%20%E0%A4%95%E0%A4%BE%20%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A5,%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%A8%E0%A4%BE%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20%E0%A4%85%E0%A4%B5%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%A8%2D%E0%A4%B6%E0%A4%BF%E0%A4%A5%E0%A4%BF%E0%A4%B2%20%E0%A4%B9%E0%A5%8B%E0%A4%A8%E0%A4%BE%E0%A5%A4"
+              target="_blank"
+              >Learn about Upanishads</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-book" style="color: #ffa500"></i></td>
+          <td>
+            <a
+              href="https://www.hindifiles.com/2020/03/shreemad-bhagwat-geeta-hindi.html"
+              target="_blank"
+              >Learn about Gita</a
+            >
+          </td>
+        </tr>
+      </table>
+
       <h4 style="color: red">
         Cool Trick : Refresh to change <br />
         the below user details
       </h4>
 
-      
-
       <div id="demo"></div>
-      <h4>Made this website <br>
-        using programming languages like <br><br>
-        1. HTML: for layout <br>
-        2.CSS : for designing<br>
-        3.JavaScript : Interactivity<br>
+      <h4>
+        Made this website <br />
+        using programming languages like <br /><br />
+        1. HTML: for layout <br />
+        2.CSS : for designing<br />
+        3.JavaScript : Interactivity<br />
       </h4>
+
+      <input type="datetime-local" /> <br />
+      <br />
+      <input type="file" id="fileInput" />
+      <div id="filePreview"></div>
+
+      <textarea name="" cols="10" rows="5" id="textAreaInput"></textarea><br />
+      <br />
+      <button id="copyButton">Copy Text</button><br />
+      <br />
+      <p id="selectedTextInfo"></p>
+
+      <div id="paragraph-wrapper"></div>
     </div>
 
     <script src="index.js"></script>
+
+    <script src="selectCopyQuote.js"></script>
+    <script src="previewFile.js"></script>
   </body>
 </html>
