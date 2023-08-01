@@ -24,14 +24,30 @@ function renderUserData(userData) {
 
     const userHTML = ` 
             <div>
-            <img className="border-wrapper" src ="${picture.large}" alt = "no image found" style = "height:200px;widht:200px; border-radius:50%; display:flex; justify-content:center; border:1px solid black; border-color : red green blue yellow; border-style : solid; border-width:5px;  ">
+            <img className="border-wrapper" src ="${picture.large}" alt = "no image found"  style="border-width:5px; border-color:red;
+            
+            height: 12.5rem;
+            width: 12.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            border-color: purple green blue cyan;
+            border-style: solid;
+            border-width: 0.313rem;
+            
+            
+            
+            
+            
+            ">
 
-            <p style = "font-size : 40px;"> Name : ${name.first}  <p/>
+            <p style = "font-size : 1.25rem;"> Name : ${name.first}  <p/>
 
-           <i class="fa-solid fa-envelope"></i> <h1>Email : ${email}<h1/>
+           
             <i class="fa-solid fa-phone fa-shake "></i>
             <h2>Phone# : ${phone}<h2/>
-            <h3 style = "font-size : 30px;">Age: ${dob.age}<h3/>
+            <h3 style = "font-size : 0.625rem;">Age: ${dob.age}<h3/>
             <i class="fa-solid fa-bell fa-shake fa-lg"></i>
            
             
