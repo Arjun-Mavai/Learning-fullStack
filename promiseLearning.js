@@ -1,6 +1,6 @@
 const promiseFunctionCheck = new Promise((resolve, reject) => {
   if (false) {
-    return resolve();
+    return resolve(); // it's a method not simply resolve and reject ; 
   } else {
     return reject();
   }
