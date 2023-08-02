@@ -89,10 +89,18 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
-#textAreaInput{
-    width : 9.375rem;
-}
-      
+      #bulb {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border-color: calc();
+        border-style: dashed;
+        border-color: crimson;
+      }
+
+      #textAreaInput {
+        width: 9.375rem;
+      }
     </style>
   </head>
   <body>
@@ -246,18 +254,30 @@
       <input type="file" id="fileInput" />
       <div id="filePreview"></div>
 
-      <textarea name="" cols="10" rows="5" id="textAreaInput" placeholder ="Type your name here"></textarea><br />
+      <textarea
+        name=""
+        cols="10"
+        rows="5"
+        id="textAreaInput"
+        placeholder="Type your name here"
+      ></textarea
+      ><br />
       <br />
       <button id="copyButton">Copy Text</button><br />
       <br />
       <p id="selectedTextInfo"></p>
 
       <div id="paragraph-wrapper"></div>
+
+      <div id="bulb"></div>
+      <button id="btn">Change Color</button>
     </div>
 
     <script src="index.js"></script>
 
     <script src="selectCopyQuote.js"></script>
     <script src="previewFile.js"></script>
+
+    <script src="string.js"></script>
   </body>
 </html>
