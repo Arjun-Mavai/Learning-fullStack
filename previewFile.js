@@ -41,3 +41,15 @@ function previewFile() {
 // Add an event listener to the file input to trigger the preview when a file is selected
 const fileInput = document.getElementById("fileInput");
 fileInput.addEventListener("change", previewFile);
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BE9R61EYL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6BE9R61EYL');
+</script>
