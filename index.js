@@ -61,6 +61,10 @@ function renderUserData(userData) {
 
 async function fetchingData() {
   let userData = await fetchUserDetails();
+ renderUserData(userData);
+}
+
+fetchingData();
 
 
 
@@ -74,7 +78,4 @@ async function fetchingData() {
 
   gtag('config', 'G-6BE9R61EYL');
 </script>
-  renderUserData(userData);
-}
-
-fetchingData();
+ 
