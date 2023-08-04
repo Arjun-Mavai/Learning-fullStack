@@ -1,3 +1,5 @@
+ 
+
 const bulb = document.getElementById("bulb");
 const btn = document.getElementById("btn");
 
@@ -17,6 +19,3 @@ btn.addEventListener("click" , () => {
 
     bulb.style.backgroundColor = randomRGB;
 })
-
-
- 
