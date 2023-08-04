@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Getting Random User</title>
+    <link rel="stylesheet" href="dark.css" id="theme" />
+
     <script
       src="https://kit.fontawesome.com/a7093e56cb.js"
       crossorigin="anonymous"
@@ -16,7 +18,7 @@
         flex-direction: column;
         align-items: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: #0e182a;
+
         overflow-x: hidden;
         max-width: 100%;
         color: white;
@@ -95,32 +97,33 @@
         border-radius: 50%;
         border-color: calc();
         border-style: dashed;
-        border-color: crimson;
+        border-color: palegoldenrod;
       }
 
       #textAreaInput {
         width: 9.375rem;
       }
+
+      a[data-tooltip] {
+        position: relative; /* Ensure the tooltip is positioned relative to the link */
+      }
+
+      a[data-tooltip]:after {
+        content: attr(data-tooltip);
+        position: absolute;
+        display: none; /* Hide the tooltip by default */
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        z-index: 1;
+      }
+
+      a[data-tooltip]:hover:after {
+        display: block; /* Show the tooltip when the link is hovered */
+      }
     </style>
   </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BE9R61EYL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6BE9R61EYL');
-</script>
-
-
-
-
-
-
-
-  
   <body>
     <div id="demo1">
       <img
@@ -237,6 +240,7 @@
             <a
               href="https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D#:~:text=11.2%20%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%A6-,%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%20%E0%A4%B6%E0%A4%AC%E0%A5%8D%E0%A4%A6%20%E0%A4%95%E0%A4%BE%20%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A5,%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%A8%E0%A4%BE%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20%E0%A4%85%E0%A4%B5%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%A8%2D%E0%A4%B6%E0%A4%BF%E0%A4%A5%E0%A4%BF%E0%A4%B2%20%E0%A4%B9%E0%A5%8B%E0%A4%A8%E0%A4%BE%E0%A5%A4"
               target="_blank"
+              data-tooptip="Upanishads are the great teachings of indian Saints"
               >Learn about Upanishads</a
             >
           </td>
@@ -288,7 +292,13 @@
       <div id="paragraph-wrapper"></div>
 
       <div id="bulb"></div>
-      <button id="btn">Change Color</button>
+      <button id="btn">Change Color</button> <br /><br />
+
+      <h1>Welcome to Our App</h1>
+      <p>Change the theme:</p>
+
+      <button id="darkBtn">Dark</button>
+      <button id="lightBtn">Crimson</button>
     </div>
 
     <script src="index.js"></script>
@@ -297,5 +307,6 @@
     <script src="previewFile.js"></script>
 
     <script src="string.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
