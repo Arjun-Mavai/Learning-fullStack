@@ -1,41 +1,312 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First website</title>
-     <link rel="stylesheet" href="boxmodel.css">
-    
-  <body>
-   <div class="new">
+    <title>Getting Random User</title>
+    <link rel="stylesheet" href="dark.css" id="theme" />
 
-    <div class="logo">First Box model</div>
-    <div class="logo1">Second Box model</div>
-    <div class="logo2">Third Box model</div>
-    
+    <script
+      src="https://kit.fontawesome.com/a7093e56cb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      /* Default styles */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        overflow-x: hidden;
+        max-width: 100%;
+        color: white;
+      }
+
+      #demo {
+        background-color: bisque;
+        color: black;
+        padding: 2rem;
+        text-align: center;
+        width: 250px;
+      }
+
+      #demo1 {
+        padding: 2rem;
+        text-align: center;
+        color: whitesmoke;
+        padding: 12px;
+      }
+
+      img.border-wrapper {
+        height: 12.5rem;
+        width: 12.5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        border-color: red green blue yellow;
+        border-style: solid;
+        border-width: 0.313rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      a {
+        color: aquamarine;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        cursor: pointer;
+      }
+
+      /* Media Queries */
+      @media screen and (min-width: 768px) {
+        body {
+          flex-direction: row;
+        }
+        #demo1 {
+          padding-right: 37.5rem;
+          text-align: left;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        #demo1 {
+          padding: 1rem;
+          text-align: center;
+        }
+      }
+
+      #paragraph-wrapper {
+        word-wrap: break-word; /* Allows long words to be broken and wrap to the next line */
+        white-space: pre-wrap; /* Preserves newlines and allows wrapping to the next line */
+        color: greenyellow;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      #bulb {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border-color: calc();
+        border-style: dashed;
+        border-color: palegoldenrod;
+      }
+
+      #textAreaInput {
+        width: 9.375rem;
+      }
+
+      a[data-tooltip] {
+        position: relative; /* Ensure the tooltip is positioned relative to the link */
+      }
+
+      a[data-tooltip]:after {
+        content: attr(data-tooltip);
+        position: absolute;
+        display: none; /* Hide the tooltip by default */
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        z-index: 1;
+      }
+
+      a[data-tooltip]:hover:after {
+        display: block; /* Show the tooltip when the link is hovered */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo1">
+      <img
+        src="mppsc-4.JPG"
+        alt="no image found"
+        style="
+          height: 6.25rem;
+          width: 6.25rem;
+          border-radius: 50%;
+          border-width: 5px;
+          border-style: solid;
+          border: 1px solid black;
+          border-color: red green blue yellow;
+          border-style: solid;
+          border-width: 0.313rem;
+        "
+      />
+      <h1
+        style="
+          font-size: larger;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif;
+          text-decoration: solid;
+        "
+      >
+        Hello Guys,<br />
+        Arjun here
+        <i class="fa-solid fa-wand-magic-sparkles fa-spin fa-spin-reverse"></i>
+      </h1>
+      <p
+        style="
+          font-size: larger;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        "
+      >
+        Here you'll find the content <br />related to the Spirituality. <br />
+        <br />
+      </p>
+      <p
+        style="
+          font-size: larger;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          color: greenyellow;
+        "
+      >
+        Attemp to made this website <br />using responsive design
+      </p>
+      <h2>Spirituality</h2>
+
+      <ul>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
+          <a
+            href="https://www.hindifiles.com/2020/03/shreemad-bhagwat-geeta-hindi.html"
+            target="_blank"
+            >Learn about Gita</a
+          >
+        </li>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
+          <a
+            href="https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A5%87%E0%A4%A6"
+            target="_blank"
+            >Learn about Vedas</a
+          >
+        </li>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
+          <a
+            href="https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D#:~:text=11.2%20%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%A6-,%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%20%E0%A4%B6%E0%A4%AC%E0%A5%8D%E0%A4%A6%20%E0%A4%95%E0%A4%BE%20%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A5,%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%A8%E0%A4%BE%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20%E0%A4%85%E0%A4%B5%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%A8%2D%E0%A4%B6%E0%A4%BF%E0%A4%A5%E0%A4%BF%E0%A4%B2%20%E0%A4%B9%E0%A5%8B%E0%A4%A8%E0%A4%BE%E0%A5%A4"
+            target="_blank"
+            >Learn about Upanishads</a
+          >
+        </li>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
+          <a
+            href="https://en.wikipedia.org/wiki/Artificial_intelligence"
+            target="_blank"
+            >Learn about Artificial intelligence</a
+          >
+        </li>
+        <li>
+          <i class="fa-solid fa-book fa-beat fa-lg" style="color: #ffa500"></i>
+          <a
+            href="https://thetravelintern.com/fun-facts-about-the-world/"
+            target="_blank"
+            >Random facts of the world</a
+          >
+        </li>
+      </ul>
+
+      <table id="table1">
+        <tr>
+          <th>i__</th>
+          <th>Content__________</th>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-book" style="color: #ffa500"></i></td>
+          <td>
+            <a
+              href="https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A5%87%E0%A4%A6"
+              target="_blank"
+              >Learn about Vedas</a
+            >
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-book" style="color: #ffa500"></i></td>
+          <td>
+            <a
+              href="https://hi.wikipedia.org/wiki/%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D#:~:text=11.2%20%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%A6-,%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%20%E0%A4%B6%E0%A4%AC%E0%A5%8D%E0%A4%A6%20%E0%A4%95%E0%A4%BE%20%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A5,%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%A8%E0%A4%BE%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20%E0%A4%85%E0%A4%B5%E0%A4%B8%E0%A4%BE%E0%A4%A6%E0%A4%A8%2D%E0%A4%B6%E0%A4%BF%E0%A4%A5%E0%A4%BF%E0%A4%B2%20%E0%A4%B9%E0%A5%8B%E0%A4%A8%E0%A4%BE%E0%A5%A4"
+              target="_blank"
+              data-tooptip="Upanishads are the great teachings of indian Saints"
+              >Learn about Upanishads</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-book" style="color: #ffa500"></i></td>
+          <td>
+            <a
+              href="https://www.hindifiles.com/2020/03/shreemad-bhagwat-geeta-hindi.html"
+              target="_blank"
+              >Learn about Gita</a
+            >
+          </td>
+        </tr>
+      </table>
+
+      <h4 style="color: red">
+        Cool Trick : Refresh to change <br />
+        the below user details
+      </h4>
+
+      <div id="demo"></div>
+      <h4>
+        Made this website <br />
+        using programming languages like <br /><br />
+        1. HTML: for layout <br />
+        2.CSS : for designing<br />
+        3.JavaScript : Interactivity<br />
+      </h4>
+
+      <input type="datetime-local" /> <br />
+      <br />
+      <input type="file" id="fileInput" />
+      <div id="filePreview"></div>
+
+      <textarea
+        name=""
+        cols="10"
+        rows="5"
+        id="textAreaInput"
+        placeholder="Type your name here"
+      ></textarea
+      ><br />
+      <br />
+      <button id="copyButton">Copy Text</button><br />
+      <br />
+      <p id="selectedTextInfo"></p>
+
+      <div id="paragraph-wrapper"></div>
+
+      <div id="bulb"></div>
+      <button id="btn">Change Color</button> <br /><br />
+
+      <h1>Welcome to Our App</h1>
+      <p>Change the theme:</p>
+
+      <button id="darkBtn">Dark</button>
+      <button id="lightBtn">Crimson</button>
     </div>
 
-     <div onmouseover = "mOver(this)" onmouseout ="mOut(this)" style = "width : 200px; background-color : green ; height : 200px; font-size : 24px; display : flex; content-align : center; justify-content: center; cursor : pointer; "> Check dynamic Javascript changes
+    <script src="index.js"></script>
 
+    <script src="selectCopyQuote.js"></script>
+    <script src="previewFile.js"></script>
 
-</div>
-
-<script>
- 
- function mOver(obj){
-     obj.innerHTML = "Hello changed";
-     obj.style.backgroundColor = "blue";
- 
- }
-
-function mOut(obj){  //here obj is bind with this to change the content of div container with access got by innerHTML
-     obj.innerHTML = "Check dynamic Javascript changes";
-     obj.style.backgroundColor = "green";
- 
- }
- 
- </script>
-    
-    
+    <script src="string.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
