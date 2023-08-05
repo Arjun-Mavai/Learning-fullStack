@@ -68,5 +68,55 @@ fetchingData();
 
 
 
+function handleAddition() {
+  const num1 = parseFloat(document.getElementById("num1").value);
+  const num2 = parseFloat(document.getElementById("num2").value);
+  const result = num1 + num2;
+  document.getElementById("result").innerText = "Result: " + result;
+}
+
+function handleSubtraction() {
+  const num1 = parseFloat(document.getElementById("num1").value);
+  const num2 = parseFloat(document.getElementById("num2").value);
+  const result = num1 - num2;
+  document.getElementById("result").innerText = "Result: " + result;
+}
+
+function handleMultiplication() {
+  const num1 = parseFloat(document.getElementById("num1").value);
+  const num2 = parseFloat(document.getElementById("num2").value);
+  const result = num1 * num2;
+  document.getElementById("result").innerText = "Result: " + result;
+}
+
+function handleDivision() {
+  const num1 = parseFloat(document.getElementById("num1").value);
+  const num2 = parseFloat(document.getElementById("num2").value);
+  const result = num1 / num2;
+  document.getElementById("result").innerText = "Result: " + result;
+}
+
+function isEvenOrOdd() {
+  const num1 = parseInt(document.getElementById("num1").value);
+  const result = num1 % 2 === 0 ? "Even" : "Odd";
+  document.getElementById("result").innerText = "Result: " + result;
+}
+
+function isPrimeOrComposite() {
+  const num1 = parseInt(document.getElementById("num1").value);
+  if (num1 <= 1) {
+    document.getElementById("result").innerText = "Result: Composite";
+  } else {
+    let isPrime = true;
+    for (let i = 2; i <= Math.sqrt(num1); i++) {
+      if (num1 % i === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    const result = isPrime ? "Prime" : "Composite";
+    document.getElementById("result").innerText = "Result: " + result;
+  }
+}
+
  
-  
